@@ -9,6 +9,14 @@ public class Event {
     private boolean isImportant = false;
     private String location;
 
+    public Event(String eventName, LocalDateTime startTime, LocalDateTime endTime) {
+        this.eventName = eventName;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.isImportant = false;
+        this.location = null;
+    }
+
     public Event(String eventName, LocalDateTime startTime, LocalDateTime endTime, String location) {
         this.eventName = eventName;
         this.startTime = startTime;
